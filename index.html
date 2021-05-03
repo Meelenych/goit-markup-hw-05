@@ -60,7 +60,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="btn service" type="button">Заказать услугу</button>
+          <button data-modal-open class="btn service" type="button">Заказать услугу</button>
         </div>
       </section>
       <!--Преимущества-->
@@ -112,17 +112,25 @@
           <h2 class="title2">Чем мы занимаемся</h2>
           <ul class="list activities-list">
             <li class="activities">
-              <img
+                <img
                 src="./images/pc.jpg"
                 alt="персональный компьютер"
                 width="370"
-              />
+              /> <div class="gradient">
+              <p class="activity-name">Десктопные приложения</p>
+              </div>
             </li>
             <li class="activities">
               <img src="./images/laptop.jpg" alt="ноутбук" width="370" />
+              <div class="gradient">
+                <p class="activity-name">Мобильные приложения</p>
+              </div>
             </li>
             <li class="activities">
               <img src="./images/tablet.jpg" alt="планшет" width="370" />
+              <div class="gradient">
+              <p class="activity-name">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -408,6 +416,20 @@
 
         </div>
       </div>
+
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close class="modal-close-btn">
+          <svg class="close-svg">
+            <use href="./images/icons.svg#close"></use>
+          </svg></button>
+        <p class="modal-title">Закажите услугу прямо сейчас!</p>
+        <p>Для заказа сообщите свои контактные данные и мы Вам перезвоним!</p>
+      </div>
+    </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
