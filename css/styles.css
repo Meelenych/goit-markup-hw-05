@@ -635,6 +635,8 @@ img {
   padding-bottom: 94px;
 }
 
+/*Фильтры*/
+
 .filter {
   display: flex;
   margin-bottom: 50px;
@@ -646,6 +648,8 @@ img {
 .filter :last-child {
   margin-right: 0;
 }
+
+/*Проекты*/
 
 .project-name {
   font-weight: 700;
@@ -705,6 +709,9 @@ img {
   transition: transform 250ms ease;
 
   color: var(--alt-text-cl);
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
 
   display: flex;
   padding-left: 24px;
