@@ -675,8 +675,6 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-  position: relative;
-  overflow: hidden;
 }
 
 .project-item:hover,
@@ -712,4 +710,9 @@ img {
   padding-left: 24px;
   padding-right: 24px;
   align-items: center;
+}
+
+.overflow {
+  position: relative;
+  overflow: hidden;
 }
