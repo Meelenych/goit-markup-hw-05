@@ -118,11 +118,6 @@ img {
   display: inline-flex;
 }
 
-.contact {
-  color: inherit;
-  margin-left: auto;
-}
-
 .logo {
   font-family: Raleway;
   font-style: normal;
@@ -147,6 +142,11 @@ img {
   color: var(--alt-text-cl);
 }
 
+.contact {
+  color: inherit;
+  margin-left: auto;
+}
+
 .menu-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -156,22 +156,25 @@ img {
   padding-bottom: 32px;
 }
 
+.phone-email > .menu-item > a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.phone-email {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
 .e-mail {
   fill: var(--main-text-cl);
   margin-right: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  float: left;
 }
 
 .phone {
   fill: var(--main-text-cl);
   margin-right: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  float: left;
 }
 
 .phone,
@@ -233,6 +236,9 @@ img {
 
 @keyframes scale {
   5% {
+    transform: scale(1);
+  }
+  25% {
     transform: scale(0.9);
   }
   50% {
@@ -547,6 +553,9 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+
+  transition-duration: 1500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -565,25 +574,6 @@ img {
 
   max-height: 100%;
   max-width: 100%;
-
-  animation: modal-appear 3s ease-out;
-}
-
-@keyframes modal-appear {
-  0% {
-    transform: translate(-50%, -50%), scale(0.5);
-    opacity: 0;
-  }
-
-  50% {
-    transform: translate(-50%, -50%), scale(0.75);
-    opacity: 0.5;
-  }
-
-  100% {
-    transform: translate(-50%, -50%), scale(1);
-    opacity: 1;
-  }
 }
 
 .modal-title {
